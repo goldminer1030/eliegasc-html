@@ -19,4 +19,16 @@ $(document).ready(function () {
       title: "7 Route de Soulet 81580 Soual, france"
     });
   }
+
+  // owl-carousel
+  if ($(".owl-carousel").length > 0) {
+    var owl = $(".owl-carousel");
+
+    owl.owlCarousel({
+      items: 1,
+      loop: true,
+      center: true,
+      rewind: true
+    });
+  }
 });
