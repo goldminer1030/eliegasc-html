@@ -106,17 +106,29 @@ header {
   background-color: #ffffff;
   box-shadow: 0 1px 10px 0px grey;
   z-index: 999;
-  transition: .7s;
+  height: 113px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -khtml-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .logo {
   display: block;
   top: 0;
   left: 0;
-  width: 220px;
+  width: 216px;
   height: auto;
   margin: 12px 0 13px 15px;
   z-index: 999;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -khtml-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .logo img {
@@ -138,10 +150,22 @@ header .navbar-default .navbar-toggle {
   position: absolute;
   right: 0;
   margin-top: 10px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -khtml-transition: 0.3s;
+  transition: 0.3s;
 }
 
 header .navbar-nav {
   margin-top: 15px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -khtml-transition: 0.3s;
+  transition: 0.3s;
 }
 
 header .navbar {
@@ -177,6 +201,12 @@ header .header-private {
   line-height: 0.23;
   border-radius: 13px;
   background-color: #fdcc00;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -khtml-transition: 0.3s;
+  transition: 0.3s;
 }
 
 header .header-info-tel {
@@ -190,6 +220,16 @@ header .header-info-tel {
   font-size: 25px;
   font-weight: bold;
   line-height: 0.2;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -khtml-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header.smaller {
+  height: 113px;
 }
 
 header.smaller .navbar-nav {
@@ -201,13 +241,7 @@ header.smaller .header-private {
 }
 
 header.smaller .logo {
-  width: 220px;
-}
-
-header.smaller .header-private {
-  top: 50px;
-  padding: 15px;
-  font-size: 15px;
+  width: 216px;
 }
 
 @media (min-width: 768px) {
@@ -1255,6 +1289,13 @@ header.smaller .header-private {
   background-color: #3a3a3a;
 }
 
+@media (min-width: 455px) {
+  header,
+  header.smaller {
+    height: 113px;
+  }
+}
+
 @media (min-width: 640px) {
   .card {
     width: 50%;
@@ -1262,6 +1303,14 @@ header.smaller .header-private {
 }
 
 @media (min-width: 992px) {
+  header {
+    height: 166px;
+  }
+
+  header.small {
+    height: 166px;
+  }
+
   #gmap-contact {
     width: 100%;
     height: 100%;
@@ -1276,7 +1325,7 @@ header.smaller .header-private {
 
 @media (max-width: 991px) {
   .page-wrapper {
-    padding-top: 115px;
+    padding-top: 113px;
   }
 }
 
@@ -1290,14 +1339,14 @@ header.smaller .header-private {
   }
 
   header .header-info-tel {
-    bottom: -45px;
+    bottom: -58px;
   }
 
   header .header-private {
-    position: initial;
-    display: inline-block;
-    margin-right: 15px;
-    margin-bottom: 15px;
-    transform: translateX(50%);
+    top: 80px;
+  }
+  
+  header.smaller .header-private {
+    top: 75px;
   }
 }
